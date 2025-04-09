@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title> Homepage </title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<style>
+body {
+	background: rgb(23,23,27);
+	background: linear-gradient(90deg, rgba(23,23,27,1) 0%, rgba(41,40,52,1) 8%, rgba(47,81,121,1) 36%, rgba(4,8,9,1) 100%);
+	color: white;
+}
+.social-icons {
+      display: flex;
+	  flex-direction: column; /* Align icons vertically */
+	  align-items: flex-start; /* Align icons to the left */
+      align-items: left;
+      width: 1390px;
+      
+      border: 0px solid #ccc;
+      border-radius: 0px;
+      margin: 12px 40px;
+      margin-top: 190px;
+      transition: all 1.3s ease-in-out;
+    }
+.social-icons a {
+      color: #F1F1F1;
+      transition: all 0.3s ease-in-out;
+	  margin-bottom: 40px;
+    }
+
+    /* Hover effects */
+.social-icons a:hover {
+      color: #3C5B6F;
+    }
+
+.social-icons a:hover i {
+      transform: translateY(-5px);
+    }
+
+.social-icons a:hover .fab {
+      background-color: #153448;
+      padding: 0px;
+    }
+
+.social-icons a:hover .fab:before {
+      color: #153448;
+    }
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
+
+}
+
+.navbar-nav {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding-left: 750px;
+}
+
+.nav-item {
+  margin: 0 50px;	
+}
+
+.nav-link {
+  display: block;
+  padding:10px 40px 10px;
+  color: #fff;
+  text-decoration: none;
+  font-family: Arial;
+  font-size: 12px;
+  transition: background-color 0.5s ease;
+  border-radius: 10px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.nav-link:hover {
+  background-color: #344C64;
+  border-radius: 10px;
+}
+.name {
+	padding-left: 400px;
+	padding-top: 50px;
+	font-size: 120px;
+  color: skyblue;
+  font-family: Georgia, Times, 'Times New Roman', serif;
+}
+.para {
+	position: absolute;
+	top: 340px;
+	padding-left: 430px;
+	font-size: 30px;
+}
+section {
+    height: 70vh; /* Set each section to be the full height of the viewport */
+        }
+.button {
+  width: 130px;
+  height: 40px;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 25px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+   box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+   7px 7px 20px 0px rgba(0,0,0,.1),
+   4px 4px 5px 0px rgba(0,0,0,.1);
+  outline: none;
+  position: absolute;
+  left: 720px;
+}
+.btn-5 {
+  width: 130px;
+  height: 40px;
+  line-height: 42px;
+  margin-top: 50px;
+  padding: 0;
+  border: none;
+ background: rgb(47,81,121);
+background: linear-gradient(90deg, rgba(47,81,121,1) 0%, rgba(20,65,79,1) 14%, rgba(33,47,65,1) 28%, rgba(40,65,95,1) 49%, rgba(38,55,73,1) 65%, rgba(40,48,64,1) 100%, rgba(32,70,79,1) 100%);
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.btn-5:hover {
+  color: #C0D6E8;
+  background: transparent;
+   box-shadow:none;
+}
+.btn-5:before,
+.btn-5:after{
+  content:'';
+  position:absolute;
+  top:0;
+  right:0;
+  height:2px;
+  width:0;
+  background: #C0D6E8;
+  box-shadow:
+   -1px -1px 5px 0px #fff,
+   7px 7px 20px 0px #0003,
+   4px 4px 5px 0px #0002;
+  transition:400ms ease all;
+}
+.btn-5:after{
+  right:inherit;
+  top:inherit;
+  left:0;
+  bottom:0;
+}
+.btn-5:hover:before,
+.btn-5:hover:after{
+  width:100%;
+  transition:800ms ease all;
+}
+
+
+</style>
+</head>
+
+<body>
+<nav class="navbar">
+  <ul class="navbar-nav">	
+    <li class="nav-item">
+      <a class="nav-link" href="about.html"><b>ABOUT</b></a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="hobbies.html"><strong>HOBBIES</strong></a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="contacts.html"><strong>CONTACTS</strong></a>
+    </li>
+  </ul>
+</nav>
+<section>
+<h2 class="name">Hi, I'm Clint</h2>
+<p class="para">Welcome to my page. I hope you enjoy reading about me!</p>
+<a href="About.html"><button class="button btn-5"><span><b>KNOW MORE</b></span></button></a>
+<div class="social-icons">
+       <a href="https://www.facebook.com/share/6XRdphofamb1zFoV/?mibextid=qi2Omg" target="_blank" rel="noopener noreferrer">
+		<i class="fa-brands fa-facebook fa-1x"></i>
+		</a>
+		<a href="https://www.instagram.com/ba.sickkk/" target="_blank" rel="noopener noreferrer">
+		<i class="fa-brands fa-instagram fa-1x"></i>
+		</a>
+		<a href="mailto:Clintianlaude29@gmail.com" target="_blank" rel="noopener noreferrer">
+		<i class="fa-solid fa-envelope fa-1x"></i>
+		</a>
+</div>
+
+</section>
+</body>
+</html>
